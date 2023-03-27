@@ -1,0 +1,11 @@
+.loginBtn{
+    display: inline-block;
+    width: 850px;
+    text-align: right;
+    margin: 0 auto;
+}
+.loginBtn a{
+    color: white;
+    font: bold 20px/48px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}

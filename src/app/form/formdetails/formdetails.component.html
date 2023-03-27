@@ -1,0 +1,153 @@
+<div id="page">
+			
+			
+	<div id="contents">
+		<div class="box">
+			<div>
+				<div id="detailsForm" class="body">
+					<h1>detailsForm</h1>
+
+
+					<div *ngIf="datasaved" class="alert alert-warning alert-dismissible fade show" role="alert">
+						<strong>{{massage}}</strong>
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					  </div>
+
+
+					<form action="index.html" method="post" [formGroup]="detailsForm" (ngSubmit)="onSubmit()">
+						<table>
+							<tbody>
+								<tr>
+									<td>Name:</td>
+									<td><input type="text" value="" class="form-control" formControlName="Name"></td>
+								</tr> <tr>
+									<td>Email*:</td>
+									<td><input type="text" value="" class="form-control" formControlName="Email"></td>
+								</tr> <tr>
+									<td>PhoneNumber*</td>
+									<td><input type="number" value="" class="form-control" formControlName="PhoneNumber"></td>
+								</tr> <tr>
+									<td>Address*</td>
+									<td ><input type="text" value="" class="form-control" formControlName="Address"></td>
+								</tr>
+								<tr>
+									<td class="txtarea">Rooms</td>
+									<td><select>
+										<option selected>Please Select Rooms types
+										<option>First Class Room<input type="number" value="" class="form-control" formControlName="Rooms"></option>
+										<option>Deluxe Room<input type="number" value="" class="form-control" formControlName="Rooms"></option>
+										<option>Suite Room<input type="number" value="" class="form-control" formControlName="Rooms"></option>
+									</select></td>
+								</tr>
+								<tr>
+									<td class="txtarea">foods</td>
+									<td><select>
+										<option selected>Please Select food types</option>
+										<option>SeaFood Special</option>
+										<option>Sumptuous Desserts</option>
+										<option>Buffet</option>
+									</select></td>
+								</tr>
+								<tr>
+									<tr>
+										<td class="txtarea">Dive Site</td>
+										<td><select>
+											<option selected>Please Select Dive Site</option>
+											<option>Gale Reef</option>
+											<option>Dawson’s Reef</option>
+											<option>Claire’s REEF</option>
+										</select></td>
+									</tr> <tr>
+									<td></td>
+									<td><input type="submit" [disabled]="!detailsForm" value="" class="btn btn-primary"></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>z
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+		<div id="page">
+			
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div id="detailsForm" class="body">
+							<h1>Enter Details</h1>
+							<form action="index.html" [formGroup]='detailsForm' method="post">
+								<table>
+									<tbody>
+										<tr>
+											<td>Name*:</td>
+											<td><input type="text" value="" class="txtfield" required></td>
+										</tr> <tr>
+											<td>Email*:</td>
+											<td><input type="text" value="" class="txtfield"></td>
+										</tr> <tr>
+											<td>Phone number*</td>
+											<td><input type="number" value="" class="txtfield"></td>
+										</tr> <tr>
+											<td class="txtarea">Address*</td>
+											<td><textarea></textarea></td>
+										</tr>
+										<tr>
+											<td class="txtarea">Rooms</td>
+											<td><select>
+												<option selected>Please Select Rooms types</option>
+												<option>First Class Room</option>
+												<option>Deluxe Room</option>
+												<option>Suite Room</option>
+											</select></td>
+										</tr>
+										<tr>
+											<td class="txtarea">foods</td>
+											<td><select>
+												<option selected>Please Select food types</option>
+												<option>SeaFood Special</option>
+												<option>Sumptuous Desserts</option>
+												<option>Buffet</option>
+											</select></td>
+										</tr>
+										<tr>
+											<tr>
+												<td class="txtarea">Dive Site</td>
+												<td><select>
+													<option selected>Please Select Dive Site</option>
+													<option>Gale Reef</option>
+													<option>Dawson’s Reef</option>
+													<option>Claire’s REEF</option>
+												</select></td>
+											</tr> <tr>
+											<td></td>
+											<td><input type="submit" value="" class="btn"></td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		 -->
